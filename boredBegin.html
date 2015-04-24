@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1347.57">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #008400}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; min-height: 16.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #d12f1b}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4f8187}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #bb2ca2}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #272ad8}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #31595d}
+    span.s1 {font-variant-ligatures: no-common-ligatures}
+    span.s2 {font-variant-ligatures: no-common-ligatures; color: #bb2ca2}
+    span.s3 {font-variant-ligatures: no-common-ligatures; color: #000000}
+    span.s4 {font-variant-ligatures: no-common-ligatures; color: #3d1d81}
+    span.s5 {font-variant-ligatures: no-common-ligatures; color: #272ad8}
+    span.s6 {font-variant-ligatures: no-common-ligatures; color: #703daa}
+    span.s7 {font-variant-ligatures: no-common-ligatures; color: #4f8187}
+    span.s8 {font-variant-ligatures: no-common-ligatures; color: #d12f1b}
+    span.s9 {font-variant-ligatures: no-common-ligatures; color: #31595d}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">// Playground - noun: a place where people can play</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">import</span><span class="s1"> UIKit</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">var</span><span class="s3"> str = </span><span class="s1">"Hello, playground"</span></p>
+<p class="p4"><span class="s4">println</span><span class="s3">(</span><span class="s1">"Hello, world"</span><span class="s3">)</span></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> myVariable = </span><span class="s5">42</span></p>
+<p class="p5"><span class="s1">myVariable</span><span class="s3"> = </span><span class="s5">22</span></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> myConstant = </span><span class="s5">42</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> implicitInteger = </span><span class="s5">70</span></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> implicitDouble = </span><span class="s5">70.0</span></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> explicitDouble: </span><span class="s6">Double</span><span class="s1"> = </span><span class="s5">70</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">let</span><span class="s3"> label = </span><span class="s1">"The width is "</span></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> width = </span><span class="s5">94</span></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> sws = </span><span class="s7">width</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> widthLabel = </span><span class="s7">label</span><span class="s1"> + </span><span class="s6">String</span><span class="s1">(</span><span class="s7">width</span><span class="s1">)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> apples = </span><span class="s5">3</span></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> oranges = </span><span class="s5">5</span></p>
+<p class="p4"><span class="s2">let</span><span class="s3"> appleSummary = </span><span class="s1">"I have </span><span class="s3">\</span><span class="s1">(</span><span class="s7">apples</span><span class="s1">) apples."</span></p>
+<p class="p4"><span class="s2">let</span><span class="s3"> fruitSummary = </span><span class="s1">"I have </span><span class="s3">\</span><span class="s1">(</span><span class="s7">apples</span><span class="s3"> + </span><span class="s7">oranges</span><span class="s1">) pieces of firuit."</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">var</span><span class="s3"> shoppingList = [</span><span class="s1">"catfish"</span><span class="s3">, </span><span class="s1">"water"</span><span class="s3">, </span><span class="s1">"tulips"</span><span class="s3">, </span><span class="s1">"blue paint"</span><span class="s3">]</span></p>
+<p class="p4"><span class="s7">shoppingList</span><span class="s3">[</span><span class="s5">1</span><span class="s3">] = </span><span class="s1">"bottle of water"</span></p>
+<p class="p5"><span class="s1">shoppingList</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> shopDo = [</span><span class="s8">"aaaa"</span><span class="s1">,</span><span class="s8">"bbbb"</span><span class="s1">]</span></p>
+<p class="p5"><span class="s1">shopDo</span><span class="s3">[</span><span class="s5">0</span><span class="s3">]</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> occupations = [</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s1">"Malcolm"</span><span class="s3">:</span><span class="s1">"Captain"</span><span class="s3">,</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s1">"Kaylee"</span><span class="s3">:</span><span class="s1">"Mechanic"</span><span class="s3">,</span></p>
+<p class="p3"><span class="s1">]</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p4"><span class="s7">occupations</span><span class="s3">[</span><span class="s1">"Jayne"</span><span class="s3">] = </span><span class="s1">"Public Relations"</span></p>
+<p class="p5"><span class="s1">occupations</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> individualScores = [</span><span class="s5">75</span><span class="s1">, </span><span class="s5">43</span><span class="s1">, </span><span class="s5">103</span><span class="s1">, </span><span class="s5">87</span><span class="s1">, </span><span class="s5">12</span><span class="s1">]</span></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> teamScore = </span><span class="s5">0</span></p>
+<p class="p5"><span class="s2">for</span><span class="s3"> score </span><span class="s2">in</span><span class="s3"> </span><span class="s1">individualScores</span><span class="s3"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">if</span><span class="s1"> score &gt; </span><span class="s5">50</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">teamScore</span><span class="s1"> += </span><span class="s5">3</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>} </span><span class="s2">else</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">teamScore</span><span class="s1"> += </span><span class="s5">1</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">teamScore</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> optionalString: </span><span class="s6">String</span><span class="s1">? = </span><span class="s8">"Hello"</span></p>
+<p class="p5"><span class="s1">optionalString</span><span class="s3"> == </span><span class="s2">nil</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> optionalName: </span><span class="s6">String</span><span class="s1">? = </span><span class="s8">"John Appleseed"</span></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> greeting = </span><span class="s8">"Hello!"</span></p>
+<p class="p5"><span class="s2">if</span><span class="s3"> </span><span class="s2">let</span><span class="s3"> name = </span><span class="s1">optionalName</span><span class="s3">{</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s7">greeting</span><span class="s1"> = </span><span class="s8">"Hello, </span><span class="s1">\</span><span class="s8">(</span><span class="s1">name</span><span class="s8">)"</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> vegetable = </span><span class="s8">"red pepper"</span></p>
+<p class="p5"><span class="s2">switch</span><span class="s3"> </span><span class="s1">vegetable</span><span class="s3">{</span></p>
+<p class="p4"><span class="s2">case</span><span class="s3"> </span><span class="s1">"celery"</span><span class="s3">:</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">let</span><span class="s3"> vegetableComment = </span><span class="s1">"Add some raisins and make ants on a log."</span></p>
+<p class="p4"><span class="s2">case</span><span class="s3"> </span><span class="s1">"cucumber"</span><span class="s3">, </span><span class="s1">"watercrees"</span><span class="s3">:</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">let</span><span class="s3"> vegetableComment = </span><span class="s1">"That would make a good tea sandwich."</span></p>
+<p class="p6"><span class="s1">case</span><span class="s3"> </span><span class="s1">let</span><span class="s3"> x </span><span class="s1">where</span><span class="s3"> x.</span><span class="s4">hasSuffix</span><span class="s3">(</span><span class="s8">"pepper"</span><span class="s3">):</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">let</span><span class="s1"> vegetableComment = </span><span class="s8">"Is it a spicy </span><span class="s1">\</span><span class="s8">(</span><span class="s1">x</span><span class="s8">)?"</span></p>
+<p class="p6"><span class="s1">default</span><span class="s3">:</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">let</span><span class="s3"> vegetableComment = </span><span class="s1">"Everything tastes good in soup"</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> interestingNmubers = [</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s8">"Prime"</span><span class="s1">:[</span><span class="s5">2</span><span class="s1">, </span><span class="s5">3</span><span class="s1">, </span><span class="s5">5</span><span class="s1">, </span><span class="s5">7</span><span class="s1">, </span><span class="s5">11</span><span class="s1">, </span><span class="s5">13</span><span class="s1">],</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s8">"Fibonacci"</span><span class="s1">:[</span><span class="s5">1</span><span class="s1">, </span><span class="s5">1</span><span class="s1">, </span><span class="s5">2</span><span class="s1">, </span><span class="s5">3</span><span class="s1">, </span><span class="s5">5</span><span class="s1">, </span><span class="s5">8</span><span class="s1">],</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s8">"Square"</span><span class="s1">:[</span><span class="s5">1</span><span class="s1">, </span><span class="s5">4</span><span class="s1">, </span><span class="s5">9</span><span class="s1">, </span><span class="s5">16</span><span class="s1">, </span><span class="s5">25</span><span class="s1">],</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1">]</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">interestingNmubers</span><span class="s3">[</span><span class="s8">"Prime"</span><span class="s3">]</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> largest = </span><span class="s5">0</span></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> from = </span><span class="s8">""</span></p>
+<p class="p3"><span class="s2">for</span><span class="s1"> (kind, numbers) </span><span class="s2">in</span><span class="s1"> </span><span class="s7">interestingNmubers</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">for</span><span class="s1"> number </span><span class="s2">in</span><span class="s1"> numbers {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">if</span><span class="s1"> number &gt; </span><span class="s7">largest</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">largest</span><span class="s1"> = number</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">from</span><span class="s1"> = kind</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">from</span><span class="s3">+</span><span class="s8">" is "</span><span class="s3">+</span><span class="s6">String</span><span class="s3">(</span><span class="s1">largest</span><span class="s3">)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> n = </span><span class="s5">2</span></p>
+<p class="p3"><span class="s2">while</span><span class="s1"> </span><span class="s7">n</span><span class="s1"> &lt; </span><span class="s5">100</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s7">n</span><span class="s1"> = </span><span class="s7">n</span><span class="s1"> * </span><span class="s5">2</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p5"><span class="s1">n</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> m = </span><span class="s5">2</span></p>
+<p class="p6"><span class="s1">do</span><span class="s3">{</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s7">m</span><span class="s1"> = </span><span class="s7">m</span><span class="s1"> * </span><span class="s5">2</span></p>
+<p class="p3"><span class="s1">} </span><span class="s2">while</span><span class="s1"> </span><span class="s7">m</span><span class="s1"> &lt; </span><span class="s5">100</span></p>
+<p class="p5"><span class="s1">m</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> firstForLoop = </span><span class="s5">0</span></p>
+<p class="p1"><span class="s1">//for i in 0..3 {</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>firstForLoop += i</span></p>
+<p class="p1"><span class="s1">//}</span></p>
+<p class="p5"><span class="s1">firstForLoop</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> secondForLoop = </span><span class="s5">0</span></p>
+<p class="p3"><span class="s2">for</span><span class="s1"> </span><span class="s2">var</span><span class="s1"> i = </span><span class="s5">0</span><span class="s1">;i &lt; </span><span class="s5">3</span><span class="s1">; ++i {</span></p>
+<p class="p5"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s1">secondForLoop</span><span class="s3"> += </span><span class="s5">1</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p5"><span class="s1">secondForLoop</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">func</span><span class="s1"> greet(name: </span><span class="s6">String</span><span class="s1">, day:</span><span class="s6">String</span><span class="s1">) -&gt; </span><span class="s6">String</span><span class="s1"> {</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">return</span><span class="s3"> </span><span class="s1">"Hello </span><span class="s3">\</span><span class="s1">(</span><span class="s3">name</span><span class="s1">), today is </span><span class="s3">\</span><span class="s1">(</span><span class="s3">day</span><span class="s1">)."</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p4"><span class="s9">greet</span><span class="s3">(</span><span class="s1">"Bob"</span><span class="s3">, </span><span class="s1">"Tuesday"</span><span class="s3">)</span></p>
+<p class="p4"><span class="s9">greet</span><span class="s3">(</span><span class="s1">"Ran"</span><span class="s3">, </span><span class="s1">"Monday"</span><span class="s3">)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">func</span><span class="s1"> getGasPrices() -&gt; (</span><span class="s6">Double</span><span class="s1">, </span><span class="s6">Double</span><span class="s1">, </span><span class="s6">Double</span><span class="s1">) {</span></p>
+<p class="p7"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">return</span><span class="s3"> (</span><span class="s1">3.59</span><span class="s3">, </span><span class="s1">3.69</span><span class="s3">, </span><span class="s1">3.79</span><span class="s3">)</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p8"><span class="s1">getGasPrices</span><span class="s3">()</span></p>
+<p class="p8"><span class="s1">getGasPrices</span><span class="s3">()</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">func</span><span class="s1"> sumOf(numbers: </span><span class="s6">Int</span><span class="s1">...) -&gt; </span><span class="s6">Int</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> sum = </span><span class="s5">0</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">for</span><span class="s1"> number </span><span class="s2">in</span><span class="s1"> numbers {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>sum += number</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">return</span><span class="s1"> sum</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p8"><span class="s1">sumOf</span><span class="s3">()</span></p>
+<p class="p3"><span class="s9">sumOf</span><span class="s1">(</span><span class="s5">2</span><span class="s1">,</span><span class="s5">4</span><span class="s1">,</span><span class="s5">6</span><span class="s1">,</span><span class="s5">6</span><span class="s1">,</span><span class="s5">7</span><span class="s1">)</span></p>
+<p class="p7"><span class="s9">sumOf</span><span class="s3">(</span><span class="s1">42</span><span class="s3">,</span><span class="s1">597</span><span class="s3">,</span><span class="s1">12</span><span class="s3">)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">func</span><span class="s1"> returnFifteen() -&gt; </span><span class="s6">Int</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> y = </span><span class="s5">10</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">func</span><span class="s1"> add() {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>y += </span><span class="s5">5</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s9">add</span><span class="s1">()</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">return</span><span class="s1"> y</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p8"><span class="s1">returnFifteen</span><span class="s3">()</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">func</span><span class="s1"> makeIncrementer() -&gt; (</span><span class="s6">Int</span><span class="s1"> -&gt; </span><span class="s6">Int</span><span class="s1">) {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">func</span><span class="s1"> addOne(number: </span><span class="s6">Int</span><span class="s1">) -&gt; </span><span class="s6">Int</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">return</span><span class="s1"> </span><span class="s5">1</span><span class="s1"> + number</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p6"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s1">return</span><span class="s3"> </span><span class="s9">addOne</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> increment = </span><span class="s9">makeIncrementer</span><span class="s1">()</span></p>
+<p class="p5"><span class="s1">increment</span><span class="s3">(</span><span class="s5">7</span><span class="s3">)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">func</span><span class="s1"> hasAnyMatches(list: [</span><span class="s6">Int</span><span class="s1">], condition: </span><span class="s6">Int</span><span class="s1"> -&gt; </span><span class="s6">Bool</span><span class="s1">) -&gt; </span><span class="s6">Bool</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">for</span><span class="s1"> item </span><span class="s2">in</span><span class="s1"> list {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">if</span><span class="s1"> condition(item) {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">return</span><span class="s1"> </span><span class="s2">true</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p6"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s1">return</span><span class="s3"> </span><span class="s1">false</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">func</span><span class="s1"> lessThanTen(number: </span><span class="s6">Int</span><span class="s1">) -&gt; </span><span class="s6">Bool</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">return</span><span class="s1"> number &lt; </span><span class="s5">10</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> numbers = [</span><span class="s5">20</span><span class="s1">, </span><span class="s5">19</span><span class="s1">, </span><span class="s5">7</span><span class="s1">, </span><span class="s5">12</span><span class="s1">]</span></p>
+<p class="p8"><span class="s1">hasAnyMatches</span><span class="s3">(</span><span class="s7">numbers</span><span class="s3">, </span><span class="s1">lessThanTen</span><span class="s3">)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">class</span><span class="s1"> Shape {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> numberOfSides = </span><span class="s5">0</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">func</span><span class="s1"> simpleDescription() -&gt; </span><span class="s6">String</span><span class="s1"> {</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">return</span><span class="s3"> </span><span class="s1">"A shape with </span><span class="s3">\</span><span class="s1">(</span><span class="s7">numberOfSides</span><span class="s1">) sides."</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> shape = </span><span class="s7">Shape</span><span class="s1">()</span></p>
+<p class="p5"><span class="s1">shape</span><span class="s3">.</span><span class="s1">numberOfSides</span><span class="s3"> = </span><span class="s5">7</span></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> shapeDescription = </span><span class="s7">shape</span><span class="s1">.</span><span class="s9">simpleDescription</span><span class="s1">()</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">class</span><span class="s1"> NamedShape {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> numberOfSides: </span><span class="s6">Int</span><span class="s1"> = </span><span class="s5">0</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> name: </span><span class="s6">String</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">init</span><span class="s1">(name: </span><span class="s6">String</span><span class="s1">){</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">self</span><span class="s1">.</span><span class="s7">name</span><span class="s1"> = name</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">func</span><span class="s1"> simpleDescription() -&gt; </span><span class="s6">String</span><span class="s1"> {</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">return</span><span class="s3"> </span><span class="s1">"A shape with </span><span class="s3">\</span><span class="s1">(</span><span class="s7">numberOfSides</span><span class="s1">) sides."</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">class</span><span class="s1"> NameShape {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> numberOfSides: </span><span class="s6">Int</span><span class="s1"> = </span><span class="s5">0</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> name: </span><span class="s6">String</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">init</span><span class="s1">(name: </span><span class="s6">String</span><span class="s1">){</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">self</span><span class="s1">.</span><span class="s7">name</span><span class="s1"> = name</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">func</span><span class="s1"> simpleDescription() -&gt; </span><span class="s6">String</span><span class="s1"> {</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">return</span><span class="s3"> </span><span class="s1">"A shape with </span><span class="s3">\</span><span class="s1">(</span><span class="s7">numberOfSides</span><span class="s1">) sides."</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">class</span><span class="s1"> Square: </span><span class="s7">NamedShape</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> sideLength: </span><span class="s6">Double</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">init</span><span class="s1">(sideLength: </span><span class="s6">Double</span><span class="s1">, name: </span><span class="s6">String</span><span class="s1">) {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">self</span><span class="s1">.</span><span class="s7">sideLength</span><span class="s1"> = sideLength</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">super</span><span class="s1">.</span><span class="s2">init</span><span class="s1">(name: name)</span></p>
+<p class="p5"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s1">numberOfSides</span><span class="s3"> = </span><span class="s5">4</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">func</span><span class="s1"> area() -&gt; </span><span class="s6">Double</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">return</span><span class="s3"> </span><span class="s1">sideLength</span><span class="s3"> * </span><span class="s1">sideLength</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">override</span><span class="s1"> </span><span class="s2">func</span><span class="s1"> simpleDescription() -&gt; </span><span class="s6">String</span><span class="s1"> {</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">return</span><span class="s3"> </span><span class="s1">"A square with sides of length </span><span class="s3">\</span><span class="s1">(</span><span class="s7">sideLength</span><span class="s1">)."</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> test = </span><span class="s7">Square</span><span class="s1">(sideLength: </span><span class="s5">5.2</span><span class="s1">, name: </span><span class="s8">"my test square"</span><span class="s1">)</span></p>
+<p class="p5"><span class="s1">test</span><span class="s3">.</span><span class="s9">area</span><span class="s3">()</span></p>
+<p class="p8"><span class="s7">test</span><span class="s3">.</span><span class="s1">simpleDescription</span><span class="s3">()</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">class</span><span class="s1"> EquilateraTriangle: </span><span class="s7">NamedShape</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> sideLength: </span><span class="s6">Double</span><span class="s1"> = </span><span class="s5">0.0</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">init</span><span class="s1">(sideLength: </span><span class="s6">Double</span><span class="s1">, name: </span><span class="s6">String</span><span class="s1">) {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">self</span><span class="s1">.</span><span class="s7">sideLength</span><span class="s1"> = sideLength</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">super</span><span class="s1">.</span><span class="s2">init</span><span class="s1">(name: name)</span></p>
+<p class="p5"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s1">numberOfSides</span><span class="s3"> = </span><span class="s5">3</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> perimeter: </span><span class="s6">Double</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">get</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">return</span><span class="s1"> </span><span class="s5">3.0</span><span class="s1"> * </span><span class="s7">sideLength</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">set</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">sideLength</span><span class="s1"> = newValue / </span><span class="s5">3.0</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">override</span><span class="s1"> </span><span class="s2">func</span><span class="s1"> simpleDescription() -&gt; </span><span class="s6">String</span><span class="s1"> {</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">return</span><span class="s3"> </span><span class="s1">"An equilateral triagle with sides of length </span><span class="s3">\</span><span class="s1">(</span><span class="s7">sideLength</span><span class="s1">)."</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> triangle = </span><span class="s7">EquilateraTriangle</span><span class="s1">(sideLength: </span><span class="s5">3.1</span><span class="s1">, name: </span><span class="s8">"a triangle"</span><span class="s1">)</span></p>
+<p class="p5"><span class="s1">triangle</span><span class="s3">.</span><span class="s1">perimeter</span></p>
+<p class="p5"><span class="s1">triangle</span><span class="s3">.</span><span class="s1">perimeter</span><span class="s3"> = </span><span class="s5">9.9</span></p>
+<p class="p5"><span class="s1">triangle</span><span class="s3">.</span><span class="s1">sideLength</span></p>
+<p class="p5"><span class="s1">triangle</span><span class="s3">.</span><span class="s1">sideLength</span><span class="s3"> = </span><span class="s5">2</span></p>
+<p class="p5"><span class="s1">triangle</span><span class="s3">.</span><span class="s1">perimeter</span></p>
+<p class="p5"><span class="s1">triangle</span><span class="s3">.</span><span class="s1">name</span></p>
+<p class="p4"><span class="s7">triangle</span><span class="s3">.</span><span class="s7">name</span><span class="s3"> = </span><span class="s1">"test triangle name"</span></p>
+<p class="p5"><span class="s1">triangle</span><span class="s3">.</span><span class="s1">name</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">class</span><span class="s1"> TriangleAndSquare {</span></p>
+<p class="p5"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s3"> triangle: </span><span class="s1">EquilateraTriangle</span><span class="s3">{</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">willSet</span><span class="s1">{</span></p>
+<p class="p5"><span class="s3"><span class="Apple-converted-space">            </span></span><span class="s1">square</span><span class="s3">.</span><span class="s1">sideLength</span><span class="s3"> = newValue.</span><span class="s1">sideLength</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> square: </span><span class="s7">Square</span><span class="s1">{</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">willSet</span><span class="s1">{</span></p>
+<p class="p5"><span class="s3"><span class="Apple-converted-space">            </span></span><span class="s1">triangle</span><span class="s3">.</span><span class="s1">sideLength</span><span class="s3"> = newValue.</span><span class="s1">sideLength</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">init</span><span class="s1">(size: </span><span class="s6">Double</span><span class="s1">, name: </span><span class="s6">String</span><span class="s1">) {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">square</span><span class="s1"> = </span><span class="s7">Square</span><span class="s1">(sideLength: size, name: name)</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">triangle</span><span class="s1"> = </span><span class="s7">EquilateraTriangle</span><span class="s1">(sideLength: size, name: name)</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> triangleAndSquare = </span><span class="s7">TriangleAndSquare</span><span class="s1">(size: </span><span class="s5">10</span><span class="s1">, name: </span><span class="s8">"another test shape"</span><span class="s1">)</span></p>
+<p class="p5"><span class="s1">triangleAndSquare</span><span class="s3">.</span><span class="s1">square</span><span class="s3">.</span><span class="s1">sideLength</span></p>
+<p class="p5"><span class="s1">triangleAndSquare</span><span class="s3">.</span><span class="s1">triangle</span><span class="s3">.</span><span class="s1">sideLength</span></p>
+<p class="p5"><span class="s1">triangleAndSquare</span><span class="s3">.</span><span class="s1">square</span><span class="s3"> = </span><span class="s1">Square</span><span class="s3">(sideLength: </span><span class="s5">50</span><span class="s3">, name: </span><span class="s8">"larger square"</span><span class="s3">)</span></p>
+<p class="p5"><span class="s1">triangleAndSquare</span><span class="s3">.</span><span class="s1">triangle</span><span class="s3">.</span><span class="s1">sideLength</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">class</span><span class="s1"> Counter {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> count: </span><span class="s6">Int</span><span class="s1"> = </span><span class="s5">0</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">func</span><span class="s1"> incrementBy(amount: </span><span class="s6">Int</span><span class="s1">,numberOfTimes times:</span><span class="s6">Int</span><span class="s1">){</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">count</span><span class="s1"> += amount * times</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> counter = </span><span class="s7">Counter</span><span class="s1">()</span></p>
+<p class="p3"><span class="s7">counter</span><span class="s1">.</span><span class="s9">incrementBy</span><span class="s1">(</span><span class="s5">2</span><span class="s1">, numberOfTimes: </span><span class="s5">7</span><span class="s1">)</span></p>
+<p class="p3"><span class="s7">counter</span><span class="s1">.</span><span class="s9">incrementBy</span><span class="s1">(</span><span class="s5">2</span><span class="s1">, numberOfTimes: </span><span class="s5">7</span><span class="s1">)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> optionalsquare: </span><span class="s7">Square</span><span class="s1">? = </span><span class="s7">Square</span><span class="s1">(sideLength: </span><span class="s5">2.5</span><span class="s1">, name: </span><span class="s8">"optional square"</span><span class="s1">)</span></p>
+<p class="p5"><span class="s2">let</span><span class="s3"> sideLength = </span><span class="s1">optionalsquare</span><span class="s3">?.</span><span class="s1">sideLength</span></p>
+<p class="p5"><span class="s1">optionalsquare</span><span class="s3">?.</span><span class="s1">name</span></p>
+<p class="p5"><span class="s1">optionalsquare</span><span class="s3">?.</span><span class="s1">name</span><span class="s3"> = </span><span class="s8">"aaadd"</span></p>
+<p class="p5"><span class="s1">optionalsquare</span><span class="s3">?.</span><span class="s1">name</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> optionalSquare = </span><span class="s7">Square</span><span class="s1">(sideLength: </span><span class="s5">2.0</span><span class="s1">, name: </span><span class="s8">"Other optional square"</span><span class="s1">)</span></p>
+<p class="p5"><span class="s1">optionalSquare</span><span class="s3">.</span><span class="s1">name</span></p>
+<p class="p4"><span class="s7">optionalSquare</span><span class="s3">.</span><span class="s7">name</span><span class="s3"> = </span><span class="s1">"Another optional square"</span></p>
+<p class="p5"><span class="s1">optionalSquare</span><span class="s3">.</span><span class="s1">name</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">enum</span><span class="s1"> Rank: </span><span class="s6">Int</span><span class="s1">{</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">case</span><span class="s1"> Ace = </span><span class="s5">1</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">case</span><span class="s1"> Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">case</span><span class="s1"> Jack, Queen, King</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">func</span><span class="s1"> simpleDescription() -&gt; </span><span class="s6">String</span><span class="s1">{</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">switch</span><span class="s1"> </span><span class="s2">self</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">case</span><span class="s1"> .Ace:</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">return</span><span class="s1"> </span><span class="s8">"ace"</span><span class="s1">;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">case</span><span class="s1"> .Jack:</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">return</span><span class="s1"> </span><span class="s8">"jack"</span><span class="s1">;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">case</span><span class="s1"> .Queen:</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">return</span><span class="s1"> </span><span class="s8">"queen"</span><span class="s1">;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">case</span><span class="s1"> .King:</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">return</span><span class="s1"> </span><span class="s8">"King"</span><span class="s1">;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">default</span><span class="s1">:</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">return</span><span class="s1"> </span><span class="s6">String</span><span class="s1">(</span><span class="s2">self</span><span class="s1">.</span><span class="s7">rawValue</span><span class="s1">)</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> ace = </span><span class="s7">Rank</span><span class="s1">.</span><span class="s9">Ace</span></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> aceRawValue = </span><span class="s7">ace</span><span class="s1">.</span><span class="s7">rawValue</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">if</span><span class="s1"> </span><span class="s2">let</span><span class="s1"> convertedRank = </span><span class="s7">Rank</span><span class="s1">(rawValue: </span><span class="s5">1</span><span class="s1">) {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">let</span><span class="s1"> threeDescription = convertedRank.</span><span class="s9">simpleDescription</span><span class="s1">()</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">enum</span><span class="s1"> Suit {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">case</span><span class="s1"> Spades, Hearts, Diamonds, Clubs</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">func</span><span class="s1"> simpleDescription() -&gt; </span><span class="s6">String</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">switch</span><span class="s1"> </span><span class="s2">self</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">case</span><span class="s1"> .Spades:</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">return</span><span class="s1"> </span><span class="s8">"spades"</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">case</span><span class="s1"> .Hearts:</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">return</span><span class="s1"> </span><span class="s8">"hearts"</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">case</span><span class="s1"> .Diamonds:</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">return</span><span class="s1"> </span><span class="s8">"diamonds"</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">case</span><span class="s1"> .Clubs:</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">return</span><span class="s1"> </span><span class="s8">"clubs"</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> hearts = </span><span class="s7">Suit</span><span class="s1">.</span><span class="s9">Hearts</span></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> heartsDescription = </span><span class="s7">hearts</span><span class="s1">.</span><span class="s9">simpleDescription</span><span class="s1">()</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">struct</span><span class="s1"> Card {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> rank: </span><span class="s7">Rank</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> suit: </span><span class="s7">Suit</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">func</span><span class="s1"> simpleDescription() -&gt; </span><span class="s6">String</span><span class="s1"> {</span></p>
+<p class="p8"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s2">return</span><span class="s3"> </span><span class="s8">"The </span><span class="s3">\</span><span class="s8">(</span><span class="s7">rank</span><span class="s3">.</span><span class="s1">simpleDescription</span><span class="s3">()</span><span class="s8">) of </span><span class="s3">\</span><span class="s8">(</span><span class="s7">suit</span><span class="s3">.</span><span class="s1">simpleDescription</span><span class="s3">()</span><span class="s8">)"</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> threeOfSpades = </span><span class="s7">Card</span><span class="s1">(rank: .</span><span class="s9">Three</span><span class="s1">, suit: .</span><span class="s9">Spades</span><span class="s1">)</span></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> threeOfSpadesDescription = </span><span class="s7">threeOfSpades</span><span class="s1">.</span><span class="s9">simpleDescription</span><span class="s1">()</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">enum</span><span class="s1"> ServerResponse {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">case</span><span class="s1"> Result(String, String)</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">case</span><span class="s1"> Error(String)</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p4"><span class="s2">let</span><span class="s3"> success = </span><span class="s7">ServerResponse</span><span class="s3">.</span><span class="s9">Result</span><span class="s3">(</span><span class="s1">"6:00 am"</span><span class="s3">, </span><span class="s1">"8:09 pm"</span><span class="s3">)</span></p>
+<p class="p4"><span class="s2">let</span><span class="s3"> failure = </span><span class="s7">ServerResponse</span><span class="s3">.</span><span class="s9">Error</span><span class="s3">(</span><span class="s1">"Out of cheese."</span><span class="s3">)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">switch</span><span class="s3"> </span><span class="s1">success</span><span class="s3"> {</span></p>
+<p class="p3"><span class="s2">case</span><span class="s1"> </span><span class="s2">let</span><span class="s1"> .Result(sunrise, sunset):</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">let</span><span class="s3"> serverResponse = </span><span class="s1">"Sunrise is at </span><span class="s3">\</span><span class="s1">(</span><span class="s3">sunrise</span><span class="s1">) and sunset is at </span><span class="s3">\</span><span class="s1">(</span><span class="s3">sunset</span><span class="s1">)."</span></p>
+<p class="p3"><span class="s2">case</span><span class="s1"> </span><span class="s2">let</span><span class="s1"> .Error(error):</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">let</span><span class="s1"> serverResponse = </span><span class="s8">"Failure... </span><span class="s1">\</span><span class="s8">(</span><span class="s1">error</span><span class="s8">)"</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">protocol</span><span class="s1"> ExampleProtocal {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> simpleDescription: </span><span class="s6">String</span><span class="s1"> { </span><span class="s2">get</span><span class="s1"> }</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">mutating</span><span class="s1"> </span><span class="s2">func</span><span class="s1"> adjust()</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">class</span><span class="s1"> SimpleClass:</span><span class="s7">ExampleProtocal</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> simpleDescription: </span><span class="s6">String</span><span class="s1"> = </span><span class="s8">"A very simple class."</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> anotherProperty: </span><span class="s6">Int</span><span class="s1"> = </span><span class="s5">69105</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">func</span><span class="s1"> adjust() {</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s7">simpleDescription</span><span class="s3"> += </span><span class="s1">" Now 100% adjusted."</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">var</span><span class="s3"> a = </span><span class="s1">SimpleClass</span><span class="s3">()</span></p>
+<p class="p8"><span class="s7">a</span><span class="s3">.</span><span class="s1">adjust</span><span class="s3">()</span></p>
+<p class="p5"><span class="s2">let</span><span class="s3"> aDescription = </span><span class="s1">a</span><span class="s3">.</span><span class="s1">simpleDescription</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">struct</span><span class="s1"> SimpleStructure: </span><span class="s7">ExampleProtocal</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">var</span><span class="s1"> simpleDescription: </span><span class="s6">String</span><span class="s1"> = </span><span class="s8">"A simple structure"</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">mutating</span><span class="s1"> </span><span class="s2">func</span><span class="s1"> adjust() {</span></p>
+<p class="p5"><span class="s3"><span class="Apple-converted-space">        </span></span><span class="s1">simpleDescription</span><span class="s3"> += </span><span class="s8">" (adjuseted)"</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2">var</span><span class="s3"> b = </span><span class="s1">SimpleStructure</span><span class="s3">()</span></p>
+<p class="p8"><span class="s7">b</span><span class="s3">.</span><span class="s1">adjust</span><span class="s3">()</span></p>
+<p class="p5"><span class="s2">let</span><span class="s3"> bDescription = </span><span class="s1">b</span><span class="s3">.</span><span class="s1">simpleDescription</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">//extension Int: ExampleProtocol {</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>var simpleDescription: String {</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">        </span>return "The number \(self)"</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>mutating func adjust() {</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">        </span>self += 42</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1">//}</span></p>
+<p class="p1"><span class="s1">//7.simpleDescription</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s2">let</span><span class="s1"> protocolValue: </span><span class="s7">ExampleProtocal</span><span class="s1"> = </span><span class="s7">a</span></p>
+<p class="p5"><span class="s1">protocolValue</span><span class="s3">.</span><span class="s1">simpleDescription</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">//func repeat&lt;ItemType&gt;(item: ItemType, times: Int) -&gt; [ItemType] {</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>var result = [ItemType]()</span></p>
+<p class="p1"><span class="s1">////<span class="Apple-converted-space">    </span>for i in 0..times {</span></p>
+<p class="p1"><span class="s1">//// <span class="Apple-converted-space">       </span></span></p>
+<p class="p1"><span class="s1">////<span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>for var i = 0 ; i &lt; times : ++i {</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">        </span>result += item</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>return result</span></p>
+<p class="p1"><span class="s1">//}</span></p>
+<p class="p1"><span class="s1">//</span></p>
+<p class="p1"><span class="s1">//repeat("knock", 4)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">// Reimplement the Swift standard library's optional type</span></p>
+<p class="p3"><span class="s2">enum</span><span class="s1"> OptionalValue&lt;T&gt; {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">case</span><span class="s1"> None</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">case</span><span class="s1"> Some(T)</span></p>
+<p class="p3"><span class="s1">}</span></p>
+<p class="p3"><span class="s2">var</span><span class="s1"> possibleInteger: </span><span class="s7">OptionalValue</span><span class="s1">&lt;</span><span class="s6">Int</span><span class="s1">&gt; = .</span><span class="s9">None</span></p>
+<p class="p5"><span class="s1">possibleInteger</span><span class="s3"> = .</span><span class="s9">Some</span><span class="s3">(</span><span class="s5">100</span><span class="s3">)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">//func anyCommonElements &lt;T, U where T: Sequence, U: Sequence, T.GeneratorType.Element: Equatable, T.GeneratorType.Element == U.GeneratorType.Element&gt; (lhs: T, rhs: U) -&gt; Bool {</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>for lhsItem in lhs {</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">        </span>for rhsItem in rhs {</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">            </span>if lhsItem == rhsItem {</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">                </span>return true</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1">//<span class="Apple-converted-space">    </span>return false</span></p>
+<p class="p1"><span class="s1">//}</span></p>
+<p class="p1"><span class="s1">//anyCommonElements([1, 2, 3], [3])</span></p>
+</body>
+</html>
