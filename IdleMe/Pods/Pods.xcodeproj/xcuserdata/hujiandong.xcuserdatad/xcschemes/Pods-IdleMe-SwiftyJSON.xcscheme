@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "729B3BF4254648DF84809F8D"
-               BuildableName = "libPods-IdleMe.a"
-               BlueprintName = "Pods-IdleMe"
+               BlueprintIdentifier = "4A93955F97273D228009B4F1"
+               BuildableName = "libPods-IdleMe-SwiftyJSON.a"
+               BlueprintName = "Pods-IdleMe-SwiftyJSON"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

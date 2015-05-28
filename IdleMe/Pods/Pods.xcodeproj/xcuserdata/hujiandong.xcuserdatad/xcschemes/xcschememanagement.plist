@@ -9,12 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-IdleMe-SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-IdleMe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-IdleMeTests-Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-IdleMeTests-SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>21CD6451FD16CF02653DCBBC</key>
+		<key>4A93955F97273D228009B4F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A39305175607D164584A469B</key>
+		<key>729B3BF4254648DF84809F8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C80392AC3D9ADD3FEFD4397F</key>
+		<key>9BFBA9B49A111FF42ED4038A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA0DDB09443D704454B981BC</key>
+		<key>A8867DE392771102DBCE9644</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C04AB6E130F42EC6AB8B5C02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DABD6F7FB7D9F5F1C3894D60</key>
 		<dict>
 			<key>primary</key>
 			<true/>
