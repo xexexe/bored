@@ -1,15 +1,15 @@
 //
-//  IdleMMTests.swift
-//  IdleMMTests
+//  IdleMeeTests.swift
+//  IdleMeeTests
 //
-//  Created by Administrator on 15/5/28.
+//  Created by Administrator on 15/5/29.
 //  Copyright (c) 2015年 Mark Ran. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class IdleMMTests: XCTestCase {
+class IdleMeeTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

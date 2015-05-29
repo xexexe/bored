@@ -1,12 +1,13 @@
 //
 //  ViewController.swift
-//  IdleMM
+//  IdleMee
 //
-//  Created by Administrator on 15/5/28.
+//  Created by Administrator on 15/5/29.
 //  Copyright (c) 2015年 Mark Ran. All rights reserved.
 //
 
 import UIKit
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
 }
 
