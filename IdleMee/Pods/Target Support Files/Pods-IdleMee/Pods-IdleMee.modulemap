@@ -1,0 +1,6 @@
+framework module Pods_IdleMee {
+  umbrella header "Pods-IdleMee-umbrella.h"
+
+  export *
+  module * { export * }
+}
