@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        Alamofire.request(.GET, "http://www.ranjun.net.cn", parameters: ["foo": "bar"])
+        Alamofire.request(.GET, "http://www.ranjun.net.cn")//, parameters: ["foo": "bar"]
             .response { (request, response, data, error) in
                 println(request)
                 println(response)
