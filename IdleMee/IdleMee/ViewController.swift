@@ -16,12 +16,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        Alamofire.request(.GET, "http://www.ranjun.net.cn")//, parameters: ["foo": "bar"]
-            .response { (request, response, data, error) in
-                println(request)
-                println(response)
-                println(error)
+//        Alamofire.request(.GET, "http://www.ranjun.net.cn")//, parameters: ["foo": "bar"]
+//            .response { (request, response, data, error) in
+//                println(request)
+//                println(response)
+//                println(error)
+//        }
+        
+        Alamofire.request(.GET, "http://www.ranjun.net.cn")
+            .responseString { (_, _, string, _) in
+                println(string)
         }
+        
+        Alamofire.request(.GET, "http://www.ranjun.net.cn/test.json")
+            .responseJSON { (_, _, JSON, _) in
+                println(JSON)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
