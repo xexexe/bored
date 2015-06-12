@@ -122,3 +122,24 @@ var maxAmplitudeFound = AudioSample.min
 //Booleans
 let orangesAreOrange = true
 let turnipsAreDelicious = false
+
+if turnipsAreDelicious {
+    print("Mmm, tasty turnips!")
+} else {
+    print("Eww, turnips are horrible.")
+}
+// prints "Eww, turnips are horribel."
+
+let i = 1
+//if i {
+    //this example will not compile, and will report an error
+//}
+
+if i == 1 {
+    //this example will compile successfully
+}
+
+//: Tuples
+
+
+    
