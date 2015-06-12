@@ -107,3 +107,18 @@ let twoThousand: UInt16 = 2_000
 let One: UInt8 = 1
 let twoThousandAndOne = twoThousand + UInt16(1)
 
+//Integer and Floating-Point Conversion
+let three = 3
+let pointOneFourOneFiveNine = 0.14159
+let piByAdd = Double(three) + pointOneFourOneFiveNine
+
+let integerPi = Int(piByAdd)
+
+//Type Aliases
+typealias AudioSample = UInt16
+var maxAmplitudeFound = AudioSample.min
+//maxAmplitudeFound is now 0
+
+//Booleans
+let orangesAreOrange = true
+let turnipsAreDelicious = false
