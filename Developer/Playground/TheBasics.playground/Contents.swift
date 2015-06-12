@@ -94,4 +94,16 @@ let justOverOneMillion = 1_000_000.000_000_1
 
 
 //Numeric Type Conversion
+//let cannotBeNegative: Uint8 = -1
+//Uint8 cannot store Negative numbers, 
+//and so this will report an error
+
+//let tooBig: Uint8 = UInt8.max +1
+//UInt8 cannot store a number larger than its maximum value,
+//and so this will also report an error
+
+
+let twoThousand: UInt16 = 2_000
+let One: UInt8 = 1
+let twoThousandAndOne = twoThousand + UInt16(1)
 
