@@ -141,5 +141,47 @@ if i == 1 {
 
 //: Tuples
 
+let http404Error = (404, "Not Found")
+//http404Error is of type (Int, Stirng),
+//and equals (404, "Not Found")
+let (statusCode, statusMessage) = http404Error
+print("The status code is \(statusCode)")
+//prints "The status code is 404"
+print("The status message is \(statusMessage)")
+//prints "The status message is Not Found"
+
+let (justTheStatusCode, _) = http404Error
+print("The status code is \(justTheStatusCode)")
+//prints "The status code is 404"
+
+print("The status code is \(http404Error.0)")
+//prints "The status code is 404"
+print("The status message is \(http404Error.1)")
+//prints "The status message is Not Found"
+
+let http200Status = (statusCode: 200, description: "OK")
+print("The status code is \(http200Status.statusCode)")
+//prints "The status code is 200"
+print("The status message is \(http200Status.description)")
+//prints "The status message is OK"
 
     
+//: Optionals
+let possibleNumber = "123"
+//let convertedNumber = Int(possibleNumber)
+//Cannot find an initailzer for type 'int' that accepts an argument list of type '(String)'
+//convertedNumber is inferred to be of type "Int?", or "optional Int"
+
+var serverResponseCode:Int? = 404
+//serverResponseCode contains an actual Int value is 404
+serverResponseCode = nil
+//serverResponseCode now contains no value
+
+var surveyAnswer: String?
+//surveyAnswer automatically set to nil
+
+//if convertedNumber != nil {
+//    print("convertedNumber contains some integer value")
+//}
+
+
