@@ -184,4 +184,37 @@ var surveyAnswer: String?
 //    print("convertedNumber contains some integer value")
 //}
 
+//:Optional Binding
+
+
+//:Impliciltly Unwrapped Optional
+let possibleString: String? = "An optional string."
+let forcedString: String = possibleString! //requires an exclamation mark
+
+
+let assumedString: String! = "An implicitly unwrapped optional string."
+let implicitString: String = assumedString //no need for an exclamation mark
+
+if assumedString != nil {
+    print(assumedString)
+}
+//prints "An implicitly unwrapped optional string"
+
+if let definiteString = assumedString {
+    print(definiteString)
+}
+// prints "An implicitly unwrapped optional string."
+
+
+//:Error Handling
+let age = -3
+assert(age >= 0, "A person's age cannot be less than zero")
+// this casuses the assertion to trigger, because age is not >= 0
+
+assert(age >= 0)
+
+
+
+
+
 
