@@ -10,8 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var strengthLabel: UILabel!
+    
+    
+    @IBOutlet weak var strengthLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        @IBOutlet weak var moodLabel: UILabel!
+        @IBOutlet weak var strengthLabel: UILabel!
         // Do any additional setup after loading the view, typically from a nib.
     }
 

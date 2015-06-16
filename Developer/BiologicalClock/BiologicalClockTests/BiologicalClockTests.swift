@@ -1,17 +1,15 @@
 //
-//  BeginTests.swift
-//  BeginTests
+//  BiologicalClockTests.swift
+//  BiologicalClockTests
 //
-//  Created by Administrator on 15/6/10.
-//  Copyright (c) 2015年 Mark Ran. All rights reserved.
-
+//  Created by MarkRan on 15/6/16.
+//  Copyright (c) 2015年 MarkRan. All rights reserved.
 //
-//https://developer.apple.com/library/prerelease/mac/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309
 
 import UIKit
 import XCTest
 
-class BeginTests: XCTestCase {
+class BiologicalClockTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
