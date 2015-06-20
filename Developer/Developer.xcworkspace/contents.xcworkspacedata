@@ -19,6 +19,9 @@
       <FileRef
          location = "group:Collection Types.playground">
       </FileRef>
+      <FileRef
+         location = "group:Control Flow.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Begin/Begin.xcodeproj">
