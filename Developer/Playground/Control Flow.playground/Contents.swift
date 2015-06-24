@@ -82,7 +82,12 @@ while square < finalSquare {
         square += board[square]
     }
 }
+
 print("Game over!")
+
+
+
+
 
 
 
