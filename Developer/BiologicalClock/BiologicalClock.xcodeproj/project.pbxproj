@@ -13,6 +13,8 @@
 		1F51C9951B30175D001DC8F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F51C9941B30175D001DC8F4 /* Images.xcassets */; };
 		1F51C9981B30175D001DC8F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F51C9961B30175D001DC8F4 /* LaunchScreen.xib */; };
 		1F51C9A41B30175D001DC8F4 /* BiologicalClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51C9A31B30175D001DC8F4 /* BiologicalClockTests.swift */; };
+		2E7B52C78674FFFA848289E9 /* Pods_BiologicalClockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2235DE6753526468FFF09 /* Pods_BiologicalClockTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		701B5140E8522712B632535F /* Pods_BiologicalClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E679DA73EA1825AC1F7687 /* Pods_BiologicalClock.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05E49B367D7D31CD6762E7C9 /* Pods-BiologicalClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiologicalClock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiologicalClock/Pods-BiologicalClock.debug.xcconfig"; sourceTree = "<group>"; };
 		1F51C9881B30175D001DC8F4 /* BiologicalClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiologicalClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F51C98C1B30175D001DC8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F51C98D1B30175D001DC8F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		1F51C99D1B30175D001DC8F4 /* BiologicalClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiologicalClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F51C9A21B30175D001DC8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F51C9A31B30175D001DC8F4 /* BiologicalClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiologicalClockTests.swift; sourceTree = "<group>"; };
+		20D05479F85F312075F137DD /* Pods-BiologicalClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiologicalClock.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiologicalClock/Pods-BiologicalClock.release.xcconfig"; sourceTree = "<group>"; };
+		32AAB3A954F3C27A645AFBC9 /* Pods-BiologicalClockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiologicalClockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiologicalClockTests/Pods-BiologicalClockTests.release.xcconfig"; sourceTree = "<group>"; };
+		D1E679DA73EA1825AC1F7687 /* Pods_BiologicalClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiologicalClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA965F52AECC5C59C6842976 /* Pods-BiologicalClockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiologicalClockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiologicalClockTests/Pods-BiologicalClockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8A2235DE6753526468FFF09 /* Pods_BiologicalClockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiologicalClockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701B5140E8522712B632535F /* Pods_BiologicalClock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7B52C78674FFFA848289E9 /* Pods_BiologicalClockTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				1F51C98A1B30175D001DC8F4 /* BiologicalClock */,
 				1F51C9A01B30175D001DC8F4 /* BiologicalClockTests */,
 				1F51C9891B30175D001DC8F4 /* Products */,
+				513A75BE3CE9B21A44698293 /* Pods */,
+				3F26D15C52EDB8F7DA7494B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +124,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3F26D15C52EDB8F7DA7494B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1E679DA73EA1825AC1F7687 /* Pods_BiologicalClock.framework */,
+				F8A2235DE6753526468FFF09 /* Pods_BiologicalClockTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		513A75BE3CE9B21A44698293 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05E49B367D7D31CD6762E7C9 /* Pods-BiologicalClock.debug.xcconfig */,
+				20D05479F85F312075F137DD /* Pods-BiologicalClock.release.xcconfig */,
+				EA965F52AECC5C59C6842976 /* Pods-BiologicalClockTests.debug.xcconfig */,
+				32AAB3A954F3C27A645AFBC9 /* Pods-BiologicalClockTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F51C9A71B30175D001DC8F4 /* Build configuration list for PBXNativeTarget "BiologicalClock" */;
 			buildPhases = (
+				2D45454031584ECFCDF5682A /* Check Pods Manifest.lock */,
 				1F51C9841B30175D001DC8F4 /* Sources */,
 				1F51C9851B30175D001DC8F4 /* Frameworks */,
 				1F51C9861B30175D001DC8F4 /* Resources */,
+				AC38BC245B0F87B54311C3C6 /* Embed Pods Frameworks */,
+				CDAFA3D36A2E1152B8F80658 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F51C9AA1B30175D001DC8F4 /* Build configuration list for PBXNativeTarget "BiologicalClockTests" */;
 			buildPhases = (
+				B334378A91F1615AA84E2779 /* Check Pods Manifest.lock */,
 				1F51C9991B30175D001DC8F4 /* Sources */,
 				1F51C99A1B30175D001DC8F4 /* Frameworks */,
 				1F51C99B1B30175D001DC8F4 /* Resources */,
+				2D67CB23123EDBAA635E2BBB /* Embed Pods Frameworks */,
+				1C3775B551FA8F63E8924BC4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +245,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C3775B551FA8F63E8924BC4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiologicalClockTests/Pods-BiologicalClockTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D45454031584ECFCDF5682A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2D67CB23123EDBAA635E2BBB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiologicalClockTests/Pods-BiologicalClockTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC38BC245B0F87B54311C3C6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiologicalClock/Pods-BiologicalClock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B334378A91F1615AA84E2779 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDAFA3D36A2E1152B8F80658 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiologicalClock/Pods-BiologicalClock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F51C9841B30175D001DC8F4 /* Sources */ = {
@@ -341,6 +472,7 @@
 		};
 		1F51C9A81B30175D001DC8F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E49B367D7D31CD6762E7C9 /* Pods-BiologicalClock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -352,6 +484,7 @@
 		};
 		1F51C9A91B30175D001DC8F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D05479F85F312075F137DD /* Pods-BiologicalClock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -363,6 +496,7 @@
 		};
 		1F51C9AB1B30175D001DC8F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA965F52AECC5C59C6842976 /* Pods-BiologicalClockTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -382,6 +516,7 @@
 		};
 		1F51C9AC1B30175D001DC8F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32AAB3A954F3C27A645AFBC9 /* Pods-BiologicalClockTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -414,6 +549,7 @@
 				1F51C9A91B30175D001DC8F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F51C9AA1B30175D001DC8F4 /* Build configuration list for PBXNativeTarget "BiologicalClockTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +558,7 @@
 				1F51C9AC1B30175D001DC8F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
