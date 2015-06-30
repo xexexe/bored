@@ -22,6 +22,9 @@
       <FileRef
          location = "group:Functions.playground">
       </FileRef>
+      <FileRef
+         location = "group:Closures.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Begin/Begin.xcodeproj">
