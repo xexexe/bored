@@ -31,6 +31,9 @@
       <FileRef
          location = "group:Classes and Structures.playground">
       </FileRef>
+      <FileRef
+         location = "group:Properties.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Begin/Begin.xcodeproj">
