@@ -34,6 +34,12 @@
       <FileRef
          location = "group:Properties.playground">
       </FileRef>
+      <FileRef
+         location = "group:Methods.playground">
+      </FileRef>
+      <FileRef
+         location = "group:AboutSwift.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Begin/Begin.xcodeproj">
