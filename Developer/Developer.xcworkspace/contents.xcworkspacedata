@@ -40,6 +40,9 @@
       <FileRef
          location = "group:AboutSwift.playground">
       </FileRef>
+      <FileRef
+         location = "group:Subscripts.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Begin/Begin.xcodeproj">
