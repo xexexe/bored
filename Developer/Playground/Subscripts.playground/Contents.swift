@@ -58,6 +58,6 @@ matrix[0, 1] = 1.5
 matrix[1, 0] = 3.2
 matrix
 let someValue = matrix[2, 2]
-
+// this triggers an assert, because [2, 2] is  outside of the matrix bounds
 
 

@@ -43,6 +43,12 @@
       <FileRef
          location = "group:Subscripts.playground">
       </FileRef>
+      <FileRef
+         location = "group:Inheritance.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Initialization.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Begin/Begin.xcodeproj">
