@@ -49,6 +49,12 @@
       <FileRef
          location = "group:Initialization.playground">
       </FileRef>
+      <FileRef
+         location = "group:Deinitialization.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Autoomatic Reference Counting.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Begin/Begin.xcodeproj">

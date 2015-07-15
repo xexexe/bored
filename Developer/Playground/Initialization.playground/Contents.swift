@@ -261,8 +261,8 @@ if unknownUnit == nil {
 enum TemperatureUnit2: Character {
     case Kelvin = "K", Celsius = "C", Fahrenheit = "F"
 }
-let fahrenheitUnit = TemperatureUnit2(rawValue: "F")
-if fahrenheitUnit != nil {
+let fahrenheitUnit2 = TemperatureUnit2(rawValue: "F")
+if fahrenheitUnit2 != nil {
     println("This is a defined temperature unit, so initialization succeeded.")
 }
 // prints "This is a defined temperature unit, so initialization succeeded."
@@ -313,5 +313,72 @@ if let oneUnnamed = CartItem(name: "", quantity: 1) {
     println("Unable to initialize one unamed product")
 }
 // prints "Unable to initialize one unnamed product"
-//261
+
+class Document {
+    var name: String?
+    // this initializer creates a document with a nil name value
+    init() {}
+    // this initializer creates a document with a nonempty name value
+    init?(name: String) {
+        self.name = name
+        if name.isEmpty { return nil }
+    }
+}
+
+class AutomaticallyNameDocument: Document {
+    override init() {
+        super.init()
+        self.name = "[Untitled]"
+    }
+    override init?(name: String) {
+        super.init()
+        if name.isEmpty {
+            self.name = "[Untitled]"
+        } else {
+            self.name = name
+        }
+    }
+}
+
+//: Required Initializers
+class SomeClass {
+    required init() {
+        // initializer implementation goes here
+    }
+}
+
+class SomeSubclass: SomeClass {
+    required init() {
+        // subclass implementation of the required initializer goes here
+    }
+}
+
+//: Setting a Default Property Value with a Closure or Function
+
+struct Checkerboard {
+    let boardColors: [Bool] = {
+        var temporaryBoard = [Bool]()
+        var isBlack = false
+        for i in 1...10 {
+            for j in 1...10 {
+                temporaryBoard.append(isBlack)
+                isBlack = !isBlack
+            }
+            isBlack = !isBlack
+        }
+        return temporaryBoard
+    }()
+    func squareIsBlackAtRow(row: Int, column: Int) -> Bool {
+        return boardColors[(row * 10) + column]
+    }
+}
+let board = Checkerboard()
+println(board.squareIsBlackAtRow(0, column: 1))
+// prints "true"
+println(board.squareIsBlackAtRow(9, column: 9))
+// prints "false"
+
+
+
+
 
