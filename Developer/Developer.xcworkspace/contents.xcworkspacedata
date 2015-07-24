@@ -55,6 +55,9 @@
       <FileRef
          location = "group:Autoomatic Reference Counting.playground">
       </FileRef>
+      <FileRef
+         location = "group:Optional Chaining.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Begin/Begin.xcodeproj">
