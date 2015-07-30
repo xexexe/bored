@@ -58,6 +58,18 @@
       <FileRef
          location = "group:Optional Chaining.playground">
       </FileRef>
+      <FileRef
+         location = "group:TypeCasting.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Nested Types.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Extensions.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Protocols.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Begin/Begin.xcodeproj">
