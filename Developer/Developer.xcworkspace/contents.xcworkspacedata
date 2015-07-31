@@ -70,6 +70,9 @@
       <FileRef
          location = "group:Protocols.playground">
       </FileRef>
+      <FileRef
+         location = "group:Generics.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Begin/Begin.xcodeproj">
