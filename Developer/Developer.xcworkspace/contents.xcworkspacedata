@@ -73,6 +73,9 @@
       <FileRef
          location = "group:Generics.playground">
       </FileRef>
+      <FileRef
+         location = "group:AccessControl.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Begin/Begin.xcodeproj">
