@@ -29,14 +29,14 @@ let someResolution = Resolution()
 let someVideoMode = VideoMode()
 
 //: Accessing Properties
-println("The width of someResolution is \(someResolution.width)")
+print("The width of someResolution is \(someResolution.width)")
 // prints "The width of someResolution is  0"
 
-println("The width of someVideoMode is \(someVideoMode.resolution.width)")
+print("The width of someVideoMode is \(someVideoMode.resolution.width)")
 // prints "The width of someVideoMode is 0"
 
 someVideoMode.resolution.width = 1280
-println("The width of someVideoMode is now \(someVideoMode.resolution.width)")
+print("The width of someVideoMode is now \(someVideoMode.resolution.width)")
 // prints "The width of someVideoMode is now 1280"
 
 //: Memberwise Initializers for Structure Types
@@ -46,9 +46,9 @@ let vga = Resolution(width: 640, height: 480)
 let hd = Resolution(width: 1920, height: 1080)
 var cinema = hd
 cinema.width = 2048
-println("cinema is now \(cinema.width) pixels wide")
+print("cinema is now \(cinema.width) pixels wide")
 // prints "cinema is now 2048 pixels wide"
-println("hd is still \(hd.width) pixels wide")
+print("hd is still \(hd.width) pixels wide")
 // prints "hd is still 1920 pixels wide"
 
 enum CompassPoint {
@@ -58,7 +58,7 @@ var currentdirection = CompassPoint.West
 let rememberedDirection = currentdirection
 currentdirection = .East
 if rememberedDirection == .West {
-    println("The remembered direction is still .West")
+    print("The remembered direction is still .West")
 }
 // prints "The remembered direction is sitll .West"
 
@@ -71,12 +71,12 @@ tenEighty.frameRate = 25.0
 
 let alsoTenEighty = tenEighty
 alsoTenEighty.frameRate = 30.0
-println("The frameRate property of tenEighty is now \(tenEighty.frameRate)")
+print("The frameRate property of tenEighty is now \(tenEighty.frameRate)")
 // prints "The frameRate property of tenEighty is now 30.0"
 
 //: Identity Operators
 if tenEighty === alsoTenEighty {
-    println("tenEighty and alsoTenEighty refer to the some VideoMode instance.")
+    print("tenEighty and alsoTenEighty refer to the some VideoMode instance.")
 }
 // prints "tenEighty and alsoTenEighty refer to the some VideoMode instance"
 

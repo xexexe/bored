@@ -202,7 +202,7 @@ case let (x, y):
 //:Continue
 let puzzleInput = "great minds think alike"
 var puzzleOutput = ""
-for character in puzzleInput {
+for character in puzzleInput.characters {
     switch character {
     case "a", "e", "i", "o", "u", " ":
         continue

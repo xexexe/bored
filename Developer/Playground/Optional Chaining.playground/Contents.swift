@@ -17,18 +17,18 @@ let john = Person()
 // this triggers a runtime error
 
 if let roomCount = john.residence?.numberOfRooms {
-    println("John's residence has \(roomCount) room(s).")
+    print("John's residence has \(roomCount) room(s).")
 } else {
-    println("Unable to retrieve the number of rooms.")
+    print("Unable to retrieve the number of rooms.")
 }
 // prints "Unable to retrieve the number of rooms."
 
 john.residence = Residence()
 
 if let roomCount = john.residence?.numberOfRooms {
-    println("John's residence has \(roomCount) room(s)")
+    print("John's residence has \(roomCount) room(s)")
 } else {
-    println("Unable to retrieve the number of rooms.")
+    print("Unable to retrieve the number of rooms.")
 }
 // prints "John's residence has 1 room(s)."
 
@@ -51,7 +51,7 @@ class Residence2 {
         }
     }
     func printNumberOfRooms() {
-        println("The number of rooms is \(numberOfRooms)")
+        print("The number of rooms is \(numberOfRooms)")
     }
     var address: Address?
 }
@@ -79,9 +79,9 @@ class Address {
 //: Accessing Properties Through Optional Chaining
 let john2 = Person2()
 if let roomCount = john2.residence?.numberOfRooms {
-    println("John's residence has \(roomCount) room(s).")
+    print("John's residence has \(roomCount) room(s).")
 } else {
-    println("Unable to retrieve the number of rooms.")
+    print("Unable to retrieve the number of rooms.")
 }
 // prints "Unable ot retrieve the number of rooms."
 
@@ -92,24 +92,24 @@ john2.residence?.address = someAddress
 
 //: Calling Methods Through Optional Chaining
 if john2.residence?.printNumberOfRooms() != nil {
-    println("It was possible to print the number of rooms.")
+    print("It was possible to print the number of rooms.")
 } else {
-    println("It was not possible to print the number of rooms.")
+    print("It was not possible to print the number of rooms.")
 }
 // prints "It was not possible to print the number of rooms."
 
 if (john2.residence?.address = someAddress) != nil {
-    println("It was possible to set the address")
+    print("It was possible to set the address")
 } else {
-    println("It was not possible to set the address.")
+    print("It was not possible to set the address.")
 }
 // prints "It was not possible to set the address."
 
 //: Accessing Subscripts Through Optional Chaining
 if let firstRoomName =  john2.residence?[0].name {
-    println("The first room name is \(firstRoomName).")
+    print("The first room name is \(firstRoomName).")
 } else {
-    println("Unable to retrieve the first room name.")
+    print("Unable to retrieve the first room name.")
 }
 // prints "Unable to retrieve the first room name."
 
@@ -129,9 +129,9 @@ testScores["Brian"]?[0] = 72
 
 //: Linking Multiple Levels of Chaining
 if let johnsStreet = john2.residence?.address?.street {
-    println("John's street name is \(johnsStreet).")
+    print("John's street name is \(johnsStreet).")
 } else {
-    println("Unable to retrieve the address.")
+    print("Unable to retrieve the address.")
 }
 // prints "Unable to retrieve the address."
 
@@ -141,23 +141,23 @@ johnsAddress.street = "Laurel Streel"
 john2.residence!.address = johnsAddress
 
 if let johnsStreet = john2.residence?.address?.street {
-    println("John's street name is \(johnsStreet).")
+    print("John's street name is \(johnsStreet).")
 } else {
-    println("Unable to retrieve the address.")
+    print("Unable to retrieve the address.")
 }
 // prints "John's street name is Laurel Street."
 
 //: Chaining on Methods with Optional Return Values
 if let buildingIdentifier = john2.residence?.address?.buildingIdentifier() {
-    println("John's building identifier is \(buildingIdentifier).")
+    print("John's building identifier is \(buildingIdentifier).")
 }
 // prints "John's building identifier is The Larches."
 
 if let beginsWithThe = john2.residence?.address?.buildingIdentifier()?.hasPrefix("The") {
     if beginsWithThe {
-        println("John's building identifier begins with \"The\".")
+        print("John's building identifier begins with \"The\".")
     } else {
-        println("John's building identifier does not begin with \"The\".")
+        print("John's building identifier does not begin with \"The\".")
     }
 }
 // prints "John's building identifier begins with "The"."

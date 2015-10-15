@@ -25,7 +25,7 @@ let constantString = "Highlander"
 //constantString += "and another Highlander"
 // this reports a compile-time  error - a constant string cannot be modified
 
-for character in "Dog!🐶" {
+for character in "Dog!🐶".characters {
     print(character)
 }
 
@@ -84,13 +84,13 @@ greeting[greeting.endIndex.predecessor()]
 //g
 greeting[greeting.startIndex.successor()]
 //u
-let index = advance(greeting.startIndex, 7)
+let index = greeting.startIndex.advancedBy(7)//advance(greeting.startIndex, 7)
 greeting[index]
 //a
 //greeting[greeting.endIndex]//error
 //greeting.endIndex.successor()//error
 
-for index in indices(greeting) {
+for index in greeting.characters.indices{
     print("\(greeting[index])")
 }
 print("\n")
@@ -101,14 +101,14 @@ welcome = "hello"
 welcome.insert("!", atIndex: welcome.endIndex)
 // welcome now equals "hello!"
 
-welcome.splice(" there", atIndex: welcome.endIndex.predecessor())
+welcome.insertContentsOf(" there".characters, at: welcome.endIndex.predecessor())
 // welcome now equals "hello there!"
 
 welcome.removeAtIndex(welcome.endIndex.predecessor())
 welcome
 // welcome now equals "hello there"
 
-let range = advance(welcome.endIndex, -6)..<welcome.endIndex
+let range = welcome.endIndex.advancedBy(-6)..<welcome.endIndex
 welcome.removeRange(range)
 // welcome now equals "hello"
 

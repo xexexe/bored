@@ -24,14 +24,14 @@ extension Double {
 }
 
 let oneInch = 25.4.mm
-println("One inch is \(oneInch) meters")
+print("One inch is \(oneInch) meters")
 // prints "One inch is 0.0254 meters"
 let threeFeet = 3.ft
-println("Three feet is \(threeFeet) meters")
+print("Three feet is \(threeFeet) meters")
 // prints "Three feet is 0.914399970739201 meters"
 
 let aMarathon = 42.km + 195.m
-println("A marathon is \(aMarathon) meters long")
+print("A marathon is \(aMarathon) meters long")
 
 //: Initializers
 struct Size {
@@ -67,14 +67,14 @@ extension Int {
     }
 }
 3.repetitions({
-    println("Hello!")
+    print("Hello!")
 })
 // Hello!
 // Hello!
 // Hello!
 
 3.repetitions({
-    println("Goodbye!")
+    print("Goodbye!")
 })
 // Goodbye!
 // Goodbye!
@@ -137,14 +137,14 @@ func printIntegerkinds(numbers: [Int]) {
     for numbers in numbers {
         switch numbers.kind {
         case .Negative:
-            println("- ")
+            print("- ")
         case .Zero:
-            println("0 ")
+            print("0 ")
         case .Postive:
-            println("+ ")
+            print("+ ")
         }
     }
-    println()
+    print()
 }
 printIntegerkinds([3,19,-27,0,-6,0,7])
 // prints "+ + - 0 - 0 +"

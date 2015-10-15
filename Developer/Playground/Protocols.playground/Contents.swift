@@ -56,9 +56,9 @@ class LinearCongruntialGenerator: RandomNumberGenerator {
     }
 }
 let generator = LinearCongruntialGenerator()
-println("Here's a random number: \(generator.random())")
+print("Here's a random number: \(generator.random())")
 // prints "Here's a random number: 0.37464991998171"
-println("And another one: \(generator.random())")
+print("And another one: \(generator.random())")
 // prints "And another one: 0.729023776863283
 
 //: Mutating Method Requirements
@@ -112,7 +112,7 @@ class Dice {
 
 var d6 = Dice(sides: 6, generator: LinearCongruntialGenerator())
 for _ in 1...5 {
-    println("Random dice roll is \(d6.roll())")
+    print("Random dice roll is \(d6.roll())")
 }
 // Random dice roll is 3
 // Random dice roll is 5
@@ -168,16 +168,16 @@ class DiceGameTracker: DiceGameDelegate {
     func gameDidStart(game: DiceGame) {
         numberOfTurns = 0
         if game is SnakesAndLadders {
-            println("Started a new game of Snakes and Ladders")
+            print("Started a new game of Snakes and Ladders")
         }
-        println("The game is using a \(game.dice.sides) - sided dice")
+        print("The game is using a \(game.dice.sides) - sided dice")
     }
     func game(game: DiceGame, didStartNewTurnWithDiceRoll diceRoll: Int) {
         ++numberOfTurns
-        println("Rolled a \(diceRoll)")
+        print("Rolled a \(diceRoll)")
     }
     func gameDidEnd(game: DiceGame) {
-        println("The game lasted for \(numberOfTurns) turns")
+        print("The game lasted for \(numberOfTurns) turns")
     }
 }
 
@@ -203,7 +203,7 @@ extension Dice: TextRepresentable {
     }
 }
 let d12 = Dice(sides: 12, generator: LinearCongruntialGenerator())
-println(d12.asText())
+print(d12.asText())
 // prints "A 12-sided dice"
 
 extension SnakesAndLadders: TextRepresentable {
@@ -211,7 +211,7 @@ extension SnakesAndLadders: TextRepresentable {
         return "A game of Snakes and Ladders with \(finalSquare) squares"
     }
 }
-println(game.asText())
+print(game.asText())
 // prints "A games of Snakes and Ladders with 25 squares"
 
 //: Declaring Protocol Adoption with an Extension
@@ -225,13 +225,13 @@ extension Hamster: TextRepresentable {}
 
 let simonTheHamster = Hamster(name: "Simon")
 let somethingTextRepresentable: TextRepresentable = simonTheHamster
-println(somethingTextRepresentable.asText())
+print(somethingTextRepresentable.asText())
 // prints "A hamster named Simon"
 
 //: Collections of Protocol Types
 let things: [TextRepresentable] = [game, d12,simonTheHamster]
 for thing in things {
-    println(thing.asText())
+    print(thing.asText())
 }
 // A game of Snakes and aLadders with 25 squares
 // A 12-sided dice
@@ -261,7 +261,7 @@ extension SnakesAndLadders: PrettyTextRepresentable {
         return output
     }
 }
-println(game.asPrettyText())
+print(game.asPrettyText())
 // A game of Snake and Ladders with 25 quares:
 //
 
@@ -282,7 +282,7 @@ struct Person2: Named, Aged {
     var age: Int
 }
 func wishHappyBirthday(celebrator: protocol<Named, Aged>) {
-    println("Happy birthday \(celebrator.name) - you're \(celebrator.age)!")
+    print("Happy birthday \(celebrator.name) - you're \(celebrator.age)!")
 }
 let birthdayPerson = Person2(name: "Malcolm", age: 21)
 wishHappyBirthday(birthdayPerson)
@@ -313,9 +313,9 @@ let objects: [AnyObject] = [
 ]
 for object in objects {
     if let objectWithArea = object as? HasArea {
-        println("Area is \(objectWithArea.area)")
+        print("Area is \(objectWithArea.area)")
     } else {
-        println("Something that doesn't have an area")
+        print("Something that doesn't have an area")
     }
 }
 // Area is 12.5663708
@@ -349,7 +349,7 @@ var counter = Counter()
 counter.dataSource = ThreeSource()
 for _ in 1...4 {
     counter.increment()
-    println(counter.count)
+    print(counter.count)
 }
 // 3
 // 6
@@ -372,7 +372,7 @@ counter.count = -4
 counter.dataSource = TowardsZeroSource()
 for _ in 1...5 {
     counter.increment()
-    println(counter.count)
+    print(counter.count)
 }
 // -3
 // -2

@@ -25,13 +25,13 @@ print(sayHelloAgain("Anna"))
 // prints "Hello again, Anna!"
 
 //: Function Parameters and Return Values
-func halfOpenRangeLength(#start: Int, end: Int) -> Int {
-    return end - start
-}
-print(halfOpenRangeLength(start: 1, 10))
-// prints "9"
-print(halfOpenRangeLength(start: 2, 8))
-// prints "6"
+//func halfOpenRangeLength(#start: Int, end: Int) -> Int {
+//    return end - start
+//}
+//print(halfOpenRangeLength(start: 1, 10))
+//// prints "9"
+//print(halfOpenRangeLength(start: 2, 8))
+//// prints "6"
 
 //: Functions Without Parameters
 func sayHelloWorld() -> String {
@@ -48,7 +48,7 @@ func sayHello(personName: String, alreadyGreeted: Bool) -> String {
         return sayHello(personName)
     }
 }
-print(sayHello("Tim", true))
+print(sayHello("Tim", alreadyGreeted: true))
 // prints "Hello again, Tim!"
 
 //: Functions Without Return Values
@@ -60,7 +60,7 @@ sayGoodbye("Dave")
 
 func printAndCount(stringToPrint: String) -> Int {
     print(stringToPrint)
-    return count(stringToPrint)
+    return stringToPrint.characters.count
 }
 func printWithoutCounting(stringToPrint: String) {
     printAndCount(stringToPrint)
@@ -92,7 +92,7 @@ print("min is \(bounds.min) and max is \(bounds.max)")
 func join(s1: String, s2: String, joiner: String) -> String {
     return s1 + joiner + s2
 }
-join("hello", "world", ", ")
+join("hello", s2:"world", joiner:", ")
 // returns "hello, world"
 
 func join(string s1: String, toString s2: String, withJoiner joiner: String) -> String {
@@ -101,17 +101,17 @@ func join(string s1: String, toString s2: String, withJoiner joiner: String) -> 
 join(string: "hello", toString: "world", withJoiner: ", ")
 // returns "hello, world"
 
-func containsCharacter(#string: String, #CharacterToFind: Character) -> Bool {
-    for character in string {
-        if character == CharacterToFind {
-            return true
-        }
-    }
-    return false
-}
-
-let containsAVee = containsCharacter(string: "aardvark", CharacterToFind: "v")
-// containsAvee equeals true, because "aardvark" contains a "v"
+//func containsCharacter(#string: String, #CharacterToFind: Character) -> Bool {
+//    for character in string {
+//        if character == CharacterToFind {
+//            return true
+//        }
+//    }
+//    return false
+//}
+//
+//let containsAVee = containsCharacter(string: "aardvark", CharacterToFind: "v")
+//// containsAvee equeals true, because "aardvark" contains a "v"
 
 func join2(string s1: String, toString s2: String, withJoiner joiner: String = " ") -> String {
     return s1 + joiner + s2
@@ -126,7 +126,7 @@ join2(string: "hello", toString: "world")
 func join3(s1: String,s2: String,joiner: String = " ") -> String {
     return s1 + joiner + s2
 }
-join3("hello", "world", joiner: "-")
+join3("hello", s2:"world", joiner: "-")
 // returns "hello-world"
 
 func arithmeticMean(numbers: Double...) -> Double {
@@ -143,7 +143,7 @@ arithmeticMean(3, 8.25, 18.75)
 // returns 10.0, which is the arithmetic mean of these three numbers
 
 func alignRight(var string: String, countNum: Int, pad: Character) -> String {
-    let amountToPad = countNum - count(string)
+    let amountToPad = countNum - string.characters.count
     if amountToPad < 1 {
         return string
     }
@@ -154,12 +154,12 @@ func alignRight(var string: String, countNum: Int, pad: Character) -> String {
     return string
 }
 let originalString = "hello"
-let paddedString = alignRight(originalString, 10, "-")
+let paddedString = alignRight(originalString, countNum:10, pad:"-")
 // paddedString is equal to "-----hello"
 originalString
 // originalString is still equal to "hello"
 
-func swapTwoInts(inout a: Int, inout b: Int) {
+func swapTwoInts(inout a: Int, inout _ b: Int) {
     let temporaryA = a
     a = b
     b = temporaryA
@@ -168,7 +168,7 @@ func swapTwoInts(inout a: Int, inout b: Int) {
 var someInt = 3
 var anotherInt = 107
 swapTwoInts(&someInt, &anotherInt)
-println("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
+print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
 // prints "someInt is now 107, and anotherInt is now 3"
 
 func addTwoInts(a: Int, b: Int) -> Int {
@@ -180,25 +180,25 @@ func multiplyTwoInts(a: Int, b: Int) -> Int {
 }
 
 func printHelloWorld() {
-    println("hello, world")
+    print("hello, world")
 }
 
 var mathFunction: (Int, Int) -> Int = addTwoInts
-println("Result: \(mathFunction(2, 3))")
+print("Result: \(mathFunction(2, 3))")
 // prints "Result: 5"
 mathFunction = multiplyTwoInts
-println("Result: \(mathFunction(2, 3))")
+print("Result: \(mathFunction(2, 3))")
 // prints "Result: 6"
 let anotherMathFunction = addTwoInts
 // anotherMathFunction is inferred to be of type (Int, Int) -> Int
 
 //: Function Types as Parameter Types
 func printMathResult(mathFunction: (Int, Int) -> Int, a: Int, b: Int) {
-    println("Result: \(mathFunction(a, b))")
+    print("Result: \(mathFunction(a, b))")
 }
-printMathResult(addTwoInts, 3, 5)
+printMathResult(addTwoInts, a:3, b:5)
 // prints "Result: 8"
-printMathResult(multiplyTwoInts, 3, 5)
+printMathResult(multiplyTwoInts, a:3, b:5)
 // prints "Result: 15"
 
 //: Function Types as Return Types
@@ -218,18 +218,18 @@ var currentValue = 3
 let moveNearerToZero = chooseStepFunction(currentValue > 0)
 // moveNearerToZero now refers to the stepBackward() function
 
-println("Counting to zero:")
+print("Counting to zero:")
 // Counting to zero:
 while currentValue != 0 {
-    println("\(currentValue)... ")
+    print("\(currentValue)... ")
     currentValue = moveNearerToZero(currentValue)
 }
-println("zero!")
+print("zero!")
 // 3...
 // 2...
 // 1...
 // zero!
-println("Hello")
+print("Hello")
 //: Nested Functions
 func chooseStepFunction2(backwards: Bool) -> (Int) -> Int {
     func stepForward(input: Int) -> Int { return input + 1 }
@@ -237,14 +237,14 @@ func chooseStepFunction2(backwards: Bool) -> (Int) -> Int {
     return backwards ? stepBackward : stepForward
 }
 
-var currentValue = -4
-let moveNearerToZero = chooseStepFunction2(currentValue > 0)
+var currentValue2 = -4
+let moveNearerToZero2 = chooseStepFunction2(currentValue > 0)
 // moveNearerToZero now refers to nested stepForward() function
-while currentValue != 0 {
-    println("\(currentValue)...")
-    currentValue = moveNearerToZero(currentValue)
+while currentValue2 != 0 {
+    print("\(currentValue2)...")
+    currentValue2 = moveNearerToZero2(currentValue2)
 }
-println("zero!")
+print("zero!")
 // -4...
 // -3...
 // -2...

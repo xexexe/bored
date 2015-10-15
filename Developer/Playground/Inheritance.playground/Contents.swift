@@ -14,7 +14,7 @@ class Vehicle {
 
 let someVehicle = Vehicle()
 
-println("Vehicle: \(someVehicle.description)")
+print("Vehicle: \(someVehicle.description)")
 // Vehicle: traveling at 0.0 miles per hour
 
 
@@ -26,7 +26,7 @@ let bicycle = Bicyle()
 bicycle.hasBasket = true
 
 bicycle.currentSpeed = 5.0
-println("Bicycle: \(bicycle.description)")
+print("Bicycle: \(bicycle.description)")
 // Bicycle: traveling at 15.0 miles per hour
 
 class Tandem: Bicyle {
@@ -37,13 +37,13 @@ let tandem = Tandem()
 tandem.hasBasket = true
 tandem.currentNumberOfPassengers = 2
 tandem.currentSpeed = 22.0
-println("Tandem: \(tandem.description)")
+print("Tandem: \(tandem.description)")
 // Tandem: traveling at 22.0 miles per hour
 
 //: Overriding
 class Train: Vehicle {
     override func makeNoise() {
-        println("Choo Choo")
+        print("Choo Choo")
     }
 }
 
@@ -62,7 +62,7 @@ class Car: Vehicle {
 let car = Car()
 car.currentSpeed = 25.0
 car.gear = 3
-println("Car: \(car.description)")
+print("Car: \(car.description)")
 // Car: traveling at 25.0 miles per hour in gear 3
 
 class AutomaticCar: Car {
@@ -75,7 +75,7 @@ class AutomaticCar: Car {
 
 let automatic = AutomaticCar()
 automatic.currentSpeed = 35.0
-println("AutomaticCar: \(automatic.description)")
+print("AutomaticCar: \(automatic.description)")
 // AutomaticCar: traveling at 35.0 miles per hour in gear 4
 
 

@@ -13,7 +13,7 @@ func swapTwoInts(inout a: Int, inout b: Int) {
 var someInt = 3
 var anotherInt = 107
 swapTwoInts(&someInt, &anotherInt)
-println("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
+print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
 // prints "someInt is now 107, and anotherInt is now 3"
 
 func swapTwoStrings(inout a: String, inout b: String) {
@@ -89,7 +89,7 @@ extension Stack {
 }
 
 if let topItem = stackOfStrings.topItem {
-    println("The top item on the stack is \(topItem).")
+    print("The top item on the stack is \(topItem).")
 }
 // prints "The top item on the stack is tres."
 
@@ -111,7 +111,7 @@ func findStringIndex(array: [String], valueToFind: String) -> Int? {
 
 let strings = ["cat", "dog", "llama", "parakeet", "terrapin"]
 if let foundIndex = findStringIndex(strings, "llama") {
-    println("The index of llama is \(foundIndex)")
+    print("The index of llama is \(foundIndex)")
 }
 // prints "The index of llama is 2"
 

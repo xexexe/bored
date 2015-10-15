@@ -158,14 +158,14 @@ let bDescription = b.simpleDescription
 //c.adjust()
 //let cDescription = c.simpleDescription
 
-func repeat<Item>(item: Item, times: Int) -> [Item] {
+func repeatItem<Item>(item: Item, times: Int) -> [Item] {
     var result = [Item]()
     for i in 0..<times {
         result.append(item)
     }
     return result
 }
-repeat("knock", 4)
+repeatItem("knock", times: 4)//("knock", 4)
 
 //Reimplement the Swift standard library's optional type
 enum OptionalValue<T> {
@@ -186,7 +186,8 @@ func anyCommonElements <T, U where T: SequenceType, U:SequenceType, T.Generator.
         }
         return false
 }
-anyCommonElements([1, 2, 3], [3])
+//anyCommonElements([1, 2, 3], [3])
+anyCommonElements([1, 2, 3], rhs: [3])
 
 func anyCommonElements2 <T, U where T: SequenceType,
                             U:SequenceType,

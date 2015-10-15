@@ -23,7 +23,7 @@ struct TimesTable {
     }
 }
 let threeTimesTable = TimesTable(multiplier: 3)
-println("six times three is \(threeTimesTable[6])")
+print("six times three is \(threeTimesTable[6])")
 // prints "six times three is 18"
 
 var numberOfLegs = ["spider": 8, "ant":6, "cat": 4]
@@ -57,7 +57,7 @@ var matrix = Matrix(rows: 2, columns: 2)
 matrix[0, 1] = 1.5
 matrix[1, 0] = 3.2
 matrix
-let someValue = matrix[2, 2]
+//let someValue = matrix[2, 2]
 // this triggers an assert, because [2, 2] is  outside of the matrix bounds
 
 

@@ -67,7 +67,7 @@ struct Rect {
 var square = Rect(origin: Point(x: 0.0, y: 0.0), size: Size(width: 10.0, height: 10.0))
 let initialSquareCenter = square.center
 square.center = Point(x: 15.0, y: 15.0)
-println("square.origin is now at (\(square.origin.x), \(square.origin.y)")
+print("square.origin is now at (\(square.origin.x), \(square.origin.y)")
 // prints "square.origin is now at (10.0, 10.0)"
 
 //: Shorthand Setter Declaration
@@ -96,18 +96,18 @@ struct Cuboid {
     }
 }
 let fourByFiveByTwo = Cuboid(width: 4.0, height: 5.0, depth: 2.0)
-println("the volume of fourByFiveByTwo is \(fourByFiveByTwo.volume)")
+print("the volume of fourByFiveByTwo is \(fourByFiveByTwo.volume)")
 // prints "the volume of fourByFiveByTwo is 40.0"
 
 //: Property Observers
 class StepCounter {
     var totalSteps: Int = 0 {
         willSet(newTotalSteps) {
-            println("About to set totalSteps to \(newTotalSteps)")
+            print("About to set totalSteps to \(newTotalSteps)")
         }
         didSet {
             if totalSteps > oldValue {
-                println("Added \(totalSteps - oldValue) steps")
+                print("Added \(totalSteps - oldValue) steps")
             }
         }
     }
@@ -149,12 +149,12 @@ class SomeClass {
     }
 }
 
-println(SomeClass.computedTypeProperty)
+print(SomeClass.computedTypeProperty)
 // prints "42"
-println(SomeStructure.storedTypeProperty)
+print(SomeStructure.storedTypeProperty)
 // prints "Some value"
 SomeStructure.storedTypeProperty = "Another value"
-println(SomeStructure.storedTypeProperty)
+print(SomeStructure.storedTypeProperty)
 // prints "Another value"
 
 struct AudioChannel {
@@ -179,14 +179,14 @@ var leftChannel = AudioChannel()
 var rightChannel = AudioChannel()
 
 leftChannel.currentLevel = 7
-println(leftChannel.currentLevel)
+print(leftChannel.currentLevel)
 // prints "7"
-println(AudioChannel.maxInputLevelForAllChannels)
+print(AudioChannel.maxInputLevelForAllChannels)
 // prints "7"
 rightChannel.currentLevel = 11
-println(rightChannel.currentLevel)
+print(rightChannel.currentLevel)
 // prints "10"
-println(AudioChannel.maxInputLevelForAllChannels)
+print(AudioChannel.maxInputLevelForAllChannels)
 // prints "10"
-println(AudioChannel.thresholdLevel)
+print(AudioChannel.thresholdLevel)
 // prints "10"

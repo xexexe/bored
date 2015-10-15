@@ -6,10 +6,10 @@ class Person {
     let name: String
     init(name: String) {
         self.name = name
-        println("\(name) is being initialized")
+        print("\(name) is being initialized")
     }
     deinit {
-        println("\(name) is being deinitialized")
+        print("\(name) is being deinitialized")
     }
 }
 var reference1: Person?
@@ -32,14 +32,14 @@ class Person2 {
     let name: String
     init(name: String) { self.name = name }
     var apartment: Apartment?
-    deinit { println("\(name) is being deinitialized") }
+    deinit { print("\(name) is being deinitialized") }
 }
 
 class Apartment {
     let number: Int
     init(number: Int) { self.number = number }
     var tenant: Person2?
-    deinit { println("Apartment #\(number) is being deinitialized") }
+    deinit { print("Apartment #\(number) is being deinitialized") }
 }
 
 var john: Person2?
@@ -59,14 +59,14 @@ class Person3 {
     let name: String
     init(name: String) { self.name = name }
     var apartment: Apartment2?
-    deinit { println("\(name) is being deinitialized") }
+    deinit { print("\(name) is being deinitialized") }
 }
 
 class Apartment2 {
     let number: Int
     init(number: Int) { self.number = number }
     weak var tenant: Person3?
-    deinit { println("Apartment #\(number) is being deinitialized") }
+    deinit { print("Apartment #\(number) is being deinitialized") }
 }
 
 var john2: Person3?
@@ -90,7 +90,7 @@ class Customer {
     init(name: String) {
         self.name = name
     }
-    deinit { println("\(name) is being deinitialized") }
+    deinit { print("\(name) is being deinitialized") }
 }
 
 class CreditCard {
@@ -100,7 +100,7 @@ class CreditCard {
         self.number = number
         self.customer = customer
     }
-    deinit { println("Card #\(number) is being deinitialized") }
+    deinit { print("Card #\(number) is being deinitialized") }
 }
 
 var john4: Customer?
@@ -134,12 +134,12 @@ class HTMLElement {
     }
     
     deinit {
-        println("\(name) is being deinitialized")
+        print("\(name) is being deinitialized")
     }
 }
 
 var paragraph: HTMLElement? = HTMLElement(name: "p", text: "hello, world")
-println(paragraph!.asHTML())
+print(paragraph!.asHTML())
 // prints "<p>hello, world</p>"
 
 

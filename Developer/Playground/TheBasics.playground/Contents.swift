@@ -208,10 +208,10 @@ if let definiteString = assumedString {
 
 //:Error Handling
 let age = -3
-assert(age >= 0, "A person's age cannot be less than zero")
+//assert(age >= 0, "A person's age cannot be less than zero")
 // this casuses the assertion to trigger, because age is not >= 0
 
-assert(age >= 0)
+//assert(age >= 0)
 
 
 

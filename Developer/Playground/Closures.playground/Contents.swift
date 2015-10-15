@@ -8,20 +8,20 @@ let names = ["Chris", "Alex", "Barry", "Daniella"]
 func backwards(s1: String, s2: String) -> Bool {
     return s1 > s2
 }
-var reversed = sorted(names, backwards)
+var reversed = names.sort(backwards)//sorted(names, backwards)
 // reversed is equal to ["Ewa", "Daniella", "Chris", "Barry", "Alex"]
 
 //: Closure Expression Syntax
 
-reversed = sorted(names, { (s1: String, s2: String) -> Bool in return s1 > s2 })
+reversed = names.sort({ (s1: String, s2: String) -> Bool in return s1 > s2 })
 
-reversed = sorted(names, { s1, s2 in return s1 > s2 } )
+reversed = names.sort({ s1, s2 in return s1 > s2 })
 
-reversed = sorted(names, { s1, s2 in s1 > s2 } )
+reversed = names.sort({ s1, s2 in s1 > s2 })
 
-reversed = sorted(names, { $0 > $1 } )
+reversed = names.sort({ $0 > $1 })
 
-reversed = sorted(names, >)
+reversed = names.sort(>)
 
 //: Trailing Closures
 func someFunctionThatTakesAClosure(closure: () -> ()) {
@@ -40,7 +40,8 @@ someFunctionThatTakesAClosure() {
     // trailing closure's body goes here
 }
 
-reversed = sorted(names) { $0 > $1 }
+reversed = names.sort() { $0 > $1 }
+reversed = names.sort({ $0 > $1})
 
 let digitNames = [
     0: "Zero", 1: "One", 2: "Two",   3: "Three", 4: "Four",

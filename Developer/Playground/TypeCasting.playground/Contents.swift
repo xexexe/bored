@@ -46,15 +46,15 @@ for item in library {
         ++songCount
     }
 }
-println("Media library contains \(movieCount) movies and \(songCount) songs")
+print("Media library contains \(movieCount) movies and \(songCount) songs")
 // prints "Media library contains 2 movies and 3 songs"
 
 //: Downcasting
 for item in library {
     if let movie = item as? Movie {
-        println("Movie: '\(movie.name)', dir. \(movie.director)")
+        print("Movie: '\(movie.name)', dir. \(movie.director)")
     } else if let song = item as? Song {
-        println("Song: '\(song.name)', by \(song.artist)")
+        print("Song: '\(song.name)', by \(song.artist)")
     }
 }
 
@@ -74,14 +74,14 @@ let someObjects: [AnyObject] = [
 
 for object in someObjects {
     let movie = object as! Movie
-    println("Movie: '\(movie.name)',dir. \(movie.director)")
+    print("Movie: '\(movie.name)',dir. \(movie.director)")
 }
 // Movie: '2001': A Space Odyssey', dir. Stanley Kubrick
 // Movie: 'Moon', dir. Duncan Jones
 // Movie: 'Alien', dir. Ridly Scott
 
 for movie in someObjects as! [Movie] {
-    println("Movie:  '\(movie.name)', dir. \(movie.director)")
+    print("Movie:  '\(movie.name)', dir. \(movie.director)")
 }
 // Movie: '2001: A Space Odyssey', dir. Stanley Kubrick
 // Movie: 'Moon', dir. Duncan Jones
@@ -104,25 +104,25 @@ things.append({ (name: String) -> String in "Hello, \(name)" })
 for thing in things {
     switch thing {
     case 0 as Int:
-        println("zero as an Int")
+        print("zero as an Int")
     case 0 as Double:
-        println("zero as a Double")
+        print("zero as a Double")
     case let someInt as Int:
-        println("an integer value of \(someInt)")
+        print("an integer value of \(someInt)")
     case let someDouble as Double where someDouble > 0:
-        println("a positive double value of \(someDouble)")
+        print("a positive double value of \(someDouble)")
     case is Double:
-        println("some other double value that I don't want to print")
+        print("some other double value that I don't want to print")
     case let someString as String:
-        println("a string value of \"\(someString)\"")
+        print("a string value of \"\(someString)\"")
     case let (x, y) as (Double, Double):
-        println("an (x, y) point at \(x), \(y)")
+        print("an (x, y) point at \(x), \(y)")
     case let movie as Movie:
-        println("a movie called '\(movie.name)', dir. \(movie.director)")
+        print("a movie called '\(movie.name)', dir. \(movie.director)")
     case let stringConverter as String -> String:
-        println(stringConverter("Michael"))
+        print(stringConverter("Michael"))
     default:
-        println("something else")
+        print("something else")
     }
 }
 

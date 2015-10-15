@@ -42,7 +42,7 @@ struct BlackjackCard {
 
 
 let theAceOfSpades = BlackjackCard(rank: .Ace, suit: .Spades)
-println("theAceOfSpades: \(theAceOfSpades.description)")
+print("theAceOfSpades: \(theAceOfSpades.description)")
 // prints "theAceOfSpades: suit is ♠,value is 1 or 11"
 let heartsSymbol = BlackjackCard.Suit.Hearts.rawValue
 // heartsSymbo is "♡"

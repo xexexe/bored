@@ -24,22 +24,22 @@ directionToHead = .East
 directionToHead = .South
 switch directionToHead {
 case .North:
-    println("Lots of planets have a north")
+    print("Lots of planets have a north")
 case .South:
-    println("Watch out for penguins")
+    print("Watch out for penguins")
 case .East:
-    println("Where the sun rises")
+    print("Where the sun rises")
 case .West:
-    println("Where the skies are blue")
+    print("Where the skies are blue")
 }
 // prints "Watch out for penguins"
 
 let somePlanet = Planet.Earth
 switch somePlanet {
 case .Earth:
-    println("Mostly harmless")
+    print("Mostly harmless")
 default:
-    println("Not a safe place for humans")
+    print("Not a safe place for humans")
 }
 // prints "Mostly harmless"
 
@@ -52,17 +52,17 @@ var productBarcode = Barcode.UPCA(8, 85909, 51226, 3)
 productBarcode = .QRCode("ABCDEFGHIJKLMNOP")
 switch productBarcode {
 case .UPCA(let numberSystem, let manufacturer, let product, let check):
-    println("UPC-A: \(numberSystem), \(manufacturer), \(product), \(check).")
+    print("UPC-A: \(numberSystem), \(manufacturer), \(product), \(check).")
 case .QRCode(let productCode):
-    println("QR code: \(productCode).")
+    print("QR code: \(productCode).")
 }
 // prints "QR code: ABCDEFGHIJKLMNOP."
 
 switch productBarcode {
 case let .UPCA(numberSystem, manufacturer, product, check):
-    println("UPC-A: \(numberSystem), \(manufacturer), \(product), \(check)")
+    print("UPC-A: \(numberSystem), \(manufacturer), \(product), \(check)")
 case let .QRCode(productCode):
-    println("QR code: \(productCode)")
+    print("QR code: \(productCode)")
 }
 // prints "QR code: ABCDEFGHIJKLMNOP."
 
@@ -87,11 +87,11 @@ let positionToFind = 9
 if let somePlanet = Planet2(rawValue: positionToFind) {
     switch somePlanet {
     case .Earth:
-        println("Mostly harmless")
+        print("Mostly harmless")
     default:
-        println("Not a safe place for humans")
+        print("Not a safe place for humans")
     }
 } else {
-    println("There isn't a planet at position \(positionToFind)")
+    print("There isn't a planet at position \(positionToFind)")
 }
 // prints "There isn't a planet at position 9"
